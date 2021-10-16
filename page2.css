@@ -1,0 +1,160 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+}
+
+body{
+	background:url(img/white-concrete-wall-textures.jpg)
+}
+
+h2{
+  border-bottom: 1px solid #75A9FF;
+}
+
+.wrapper{
+	width: 80%;
+	margin: 0 auto;
+}
+
+/*---Header---*/
+.header{
+	width: 100%;
+	height: 40px;
+	display: block;
+	background: #101010;
+}
+
+.header_container{
+	width: 1000px;
+	height: 100%;
+	display: block;
+	margin: 0 auto;
+}
+
+
+.navigation{
+	height: 100%;
+	float: right;
+}
+
+
+.navigation a{
+	height: 100%;
+	display: table;
+	float: left;
+	padding: 0 20px;
+	text-decoration: none;
+}
+
+.navigation a li{
+	display: table-cell;
+	vertical-align: middle;
+	color: 	#DDDDDD;
+	transition: all 0.3s ease 0s;
+}
+
+.navigation a li:hover{
+	background-color: #C0C0C0;
+	color: #333333;
+}
+
+/*--Logo--*/
+.logo h1{
+	font-size: 40px;
+}
+
+/*---Menu bar---*/
+
+.menu{
+	width: 100%;
+	height: 40px;
+	display: block;
+	background: #EEFFFF;
+	margin-bottom: 20px
+}
+
+.menu_container{
+	height: 100%;
+	display: block;
+	margin: 0 auto;
+}
+
+.menu_navigation{
+	height: 100%;
+	float: left;
+}
+
+.menu_navigation a{
+	height: 100%;
+	display: table;
+	float: left;
+	padding: 0 20px;
+	text-decoration: none;
+}
+
+.menu_navigation a li{
+	display: table-cell;
+	vertical-align: middle;
+	color: black;
+	font-weight: bold;
+	transition: transform 0.2s;
+}
+
+.menu_navigation a li:hover{
+	transform: scale(1.5);
+}
+
+/*--Main--*/
+.main_container h1 {
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin: 10px 0;
+}
+.main{
+	background-color: white;
+}
+
+.main_container{
+	padding: 20px;
+}
+
+tr th{
+  text-align: left;
+}
+
+#name, #password, #city {
+  width: 150px;
+}
+
+#email, #address, #range{
+  width: 460px;
+}
+
+#state{
+  width: 80px;
+}
+
+#zip{
+  width: 120px;
+}
+
+#submit{
+  background-color:	#99CCFF;
+}
+
+.clear{
+	clear: both;
+}
+
+footer{
+	margin-top: 20px;
+	background-color: black;
+	color: #DDDDDD;
+	text-align: center;
+	font-style: italic;
+	font-weight: 400;
+}

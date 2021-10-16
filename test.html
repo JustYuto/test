@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="test.js"></script>
+    <title></title>
+  </head>
+  <body>
+    <div class="test">
+      First Name:<input type="text" id="firstName" onblur="validateFirstName()">
+      <span id="firstNamePrompt"></span>
+      <br><br>
+      Last Name: <input type="text" id="lastName" onblur="validateLastName()">
+      <span id="lastNamePrompt"></span>
+      <br><br>
+      Phone Number:<input type="tel" id="phoneNum">
+      <br><br>
+      Order Quantity:<input type="text" id="quantity">
+      <br><br>
+      <input type="submit" value="Order Now">
+    </div>
+  </body>
+  <input type="email" required="required">
+
+
+  <form>
+  <div>
+    <input type="text" required/>
+  </div>
+
+  <div>
+    <label>
+      <input type="radio" name="radio1" required/>
+      ラジオボタン
+    </label>
+  </div>
+
+  <div>
+    <label>
+      <input type="checkbox" name="agree" value="1" required/>
+      チェックボックス
+    </radio>
+  </div>
+
+  <div>
+    <select name="example" required>
+      <option></option>
+      <option value="選択肢1">選択肢1</option>
+      <option value="選択肢2">選択肢2</option>
+      <option value="選択肢3">選択肢3</option>
+    </select>
+  </div>
+
+  <button type="submit">送信</button>
+</form>
+</html>

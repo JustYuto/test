@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="page2.css">
+  <script type="text/javascript" src="validation.js"></script>
+	<title></title>
+</head>
+<body>
+	<div class="wrapper">
+				<div class="header">
+					<div class="header_container">
+						<ul class="navigation">
+							<a href="#"><li>My account</li></a>
+							<a href="#"><li>Wish List</li></a>
+							<a href="#"><li>Shopping Cart</li></a>
+							<a href="#"><li>Check Out</li></a>
+						</ul>
+					</div>
+				</div>
+				<div class="logo">
+					<h1>Art Store</h1>
+				</div>
+				<div class="menu">
+					<div class="menu_container">
+						<ul class="menu_navigation">
+							<a href="pageOne.html"><li>Home</li></a>
+							<a href="#"><li>About Us</li></a>
+							<a href="#"><li>Art Works</li></a>
+							<a href="#"><li>Artists</li></a>
+						</ul>
+					</div>
+				</div>
+				<main>
+					<div class="main">
+						<form class="form" name="form" method="post"  onsubmit="check()">
+							<div class="main_container" name="form">
+								<h1>Customer Registration</h1>
+								<div class="usefInfo" >
+									<h2>1. User Info</h2>
+									<table>
+										<tr>
+											<th>Fisrt Name<span id="firstNamePrompt"></span></th>
+											<th></th>
+											<th>Last Name<span id="lastNamePrompt"></span></th>
+										</tr>
+										<tr>
+											<td><input type="text" id="firstName" name="name" onblur="validateFirstName()" required></td>
+											<td></td>
+											<td><input type="text" id="lastName" name="name" onblur="validateLastName()" required></td>
+											<td></td>
+
+										</tr>
+										<tr>
+											<th>E-mail</th>
+										</tr>
+										<tr>
+											<td colspan="3"><input type="email" id="email" name="email" onblur="validateEmail()" placeholder="format for email is xxx@yyy.zzz" required>
+											<td><span id="emailPrompt"></span></td>
+											</td>
+										</tr>
+										<tr>
+											<th>Password</th>
+											<th></th>
+											<th>Password repeat</th>
+										</tr>
+										<tr>
+											<td><input type="password" id="password" name="password" onblur="checkPasswordLength()" placeholder="at least 8 characters" required></td>
+											<td></td>
+											<td><input type="password" id="confirm" name="confirm" onblur="validatePassword(this)"placeholder="at least 8 characters" required></td>
+											<td>
+												<span id="passwordPrompt"></span><br><span id="passwordComfirmPrompt"></span>
+											</td>
+
+										</tr>
+									</table>
+								</div>
+								<div class="location">
+									<h2>2. Location</h2>
+									<table>
+										<tr>
+											<th colspan="3">Address</th>
+										</tr>
+										<tr>
+											<td colspan="3"><input type="text" id="address" name="address" required></td>
+										</tr>
+										<tr>
+											<th>City</th>
+											<th>State</th>
+											<th>Zip</th>
+										</tr>
+										<tr>
+											<td><input type="text" id="city" name="city" required></td>
+											<td><input type="text" id="state" name="state" required></td>
+											<td><input type="text" id="zip" name="zip" required></td>
+										</tr>
+										<tr>
+											<th>Phone</th>
+											<th></th>
+											<th>Country</th>
+										</tr>
+										<tr>
+											<td><input type="tel" id="tel" name="tel" onblur="checkPhone()" placeholder="NNN-NNN-NNNN" required></td>
+											<td><span id="phonePrompt"></span></td>
+											<td>
+												<select id="country">
+													<option value="">Canada</option>
+													<option value="">America</option>
+													<option value="">Mexico</option>
+													<option value="">United State</option>
+													<option value="">Germany</option>
+													<option value="">Japan</option>
+													<option value="">Malaysia</option>
+												</select>
+											</td>
+										</tr>
+										<tr>
+											<th>Contitent</th>
+										</tr>
+										<tr>
+											<td><input type="radio" name="continent">North America</td>
+										</tr>
+										<tr>
+											<td><input type="radio" name="continent">Europe</td>
+										</tr>
+										<tr>
+											<td><input type="radio" name="continent">South America</td>
+										</tr>
+									</table>
+								</div>
+								<div class="3. persobalDetails">
+									<h2>3. Personal Details</h2>
+									<table>
+										<tr>
+											<th>Birth Day</th>
+											<th>Favourite Color</th>
+										</tr>
+										<tr>
+											<td><input type="date" name="birthday"  required></td>
+											<td><input type="color" name="color"></td>
+										</tr>
+										<tr>
+											<th>Interest In Art</th>
+										</tr>
+										<tr>
+											<td colspan="3">Minimal<input type="range" id="range" name="range">Love it!</td>
+										</tr>
+									</table>
+									<div class="allDone">
+										<h2>4. All Done</h2>
+										<table>
+											<tr>
+												<td><input type="checkbox" name="checkbox" required></td>
+												<td><label for="agree">I agree to the <a href="#">Terms of the site</a></label></td>
+											</tr>
+											<tr>
+												<td colspan="2">
+													<button type="submit" name="button" id="submit">
+														<img src="img/button-ok.png" height="30" width="30">
+														Sign me up!
+													</button>
+												</td>
+											</tr>
+										</table>
+									</div>
+								</div>
+							</div>
+						</form>
+
+            </div>
+				</main>
+				<footer>
+					<p>All images are copyright to their owners. This is just a hypothetical site &copy 2014 Copyright Art Store</p>
+				</footer>
+	</div>
+</body>
+</html>
